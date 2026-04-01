@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Weather Info Page</title>
+
+  <!-- Spline Viewer -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.53/build/spline-viewer.js"></script>
+
+  <!-- Link External CSS -->
+  <link rel="stylesheet" href="details.css">
+</head>
+
+<body>
+
+<!-- Spline Background -->
+<spline-viewer url="https://prod.spline.design/g-LV5AsQkKXtbZUD/scene.splinecode"></spline-viewer>
+
+<!-- Content Box -->
+<div class="content-box">
+  <h1>🌤 weather today </h1>
+  <p id="city"> </p>
+
+ <div class="details">
+  <p id="temp"> </p>
+  <p id="wind"></p>
+  <p id="condition"> </p>
+</div>
+
+
+  <button>Refresh Weather</button>
+</div>
+<script src="details.js"></script>
+
+</body>
+</html>

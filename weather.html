@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3D Weather Website</title>
+
+  <!-- Spline Background -->
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.53/build/spline-viewer.js"></script>
+
+  <!-- Link CSS -->
+ <link rel="stylesheet" href="weatherr.css">
+</head>
+
+<body>
+
+  <!-- 3D Background -->
+  <spline-viewer url="https://prod.spline.design/wGv6iQJYoYSQWipl/scene.splinecode"></spline-viewer>
+
+  <!-- Weather UI -->
+  <div class="weather-box">
+    <p style="font-size: 60px;">🌤 Weather Today </p>
+<div class="holder">
+    <input id="city" placeholder="Enter city name">
+    <button onclick="getWeather()">Search</button>
+    </div>
+    <p>
+      <button onclick="useLiveLocation()">use live location</button>
+</p>
+
+    <h2 id="temp"></h2>
+    <p id="desc"></p>
+
+</div>
+
+  <!-- Link JavaScript -->
+  <script src="weather.js"></script>
+
+</body>
+</html>
